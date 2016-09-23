@@ -8,6 +8,16 @@
 		<action name="index">
 			<result>index.jsp</result>
 		</action>
+		
+	
+		<action name="hello" class="action.HelloAction" >
+			<result name="success">hello.jsp</result>
+			<result name="failure">error.jsp</result>
+		</action>
+		
+		<action name="currency" class="action.CurrencyAction" >
+			<result name="success">currency.jsp</result>
+		</action>
 
 	</package>
 </struts>        
