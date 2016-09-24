@@ -1,5 +1,8 @@
 <%@ taglib uri="/struts-tags" prefix="s" %>
 <html>
+<head>
+   <s:head/>
+</head>
 <body>
 
 <h2>Currency Conversion</h2>
@@ -8,7 +11,8 @@
   <s:textfield name="usd" label="US Dollars (USD)"></s:textfield>
   <s:submit value="Convert To INR"></s:submit>
 </s:form>
-
-INR = <s:property value="inr" />
+<s:if test="inr > 0">
+    <h3>INR = <s:property value="inr" /></h3>
+</s:if>
 </body>
 </html>

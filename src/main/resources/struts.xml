@@ -8,15 +8,21 @@
 		<action name="index">
 			<result>index.jsp</result>
 		</action>
-		
-	
-		<action name="hello" class="action.HelloAction" >
+
+
+		<action name="hello" class="action.HelloAction">
 			<result name="success">hello.jsp</result>
 			<result name="failure">error.jsp</result>
 		</action>
-		
-		<action name="currency" class="action.CurrencyAction" >
+
+		<action name="currency" class="action.CurrencyAction">
 			<result name="success">currency.jsp</result>
+			<!--  if validation fails, struts returns input as result -->
+			<result name="input">currency.jsp</result>
+		</action>
+
+		<action name="courses" class="action.CoursesAction" method="load">
+			<result name="success">courses.jsp</result>
 		</action>
 
 	</package>

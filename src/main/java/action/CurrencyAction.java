@@ -1,6 +1,8 @@
 package action;
 
-public class CurrencyAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class CurrencyAction  extends ActionSupport {
 	double usd, inr;
 
 	public double getUsd() {
@@ -17,6 +19,14 @@ public class CurrencyAction {
 
 	public void setInr(double inr) {
 		this.inr = inr;
+	}
+
+	// programmatic validation 
+	@Override
+	public void validate() {
+		super.validate();
+		if (usd <= 0) 
+			this.addFieldError("usd", "Invalid Amount For USD");
 	}
 
 	public String execute() {
