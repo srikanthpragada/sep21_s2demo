@@ -20,6 +20,13 @@
 			<version>2.3.30</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-convention-plugin</artifactId>
+			<version>2.3.30</version>
+		</dependency>
+
+
 	</dependencies>
 	<build>
 		<finalName>s2demo</finalName>
