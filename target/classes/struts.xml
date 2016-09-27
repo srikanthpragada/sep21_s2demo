@@ -20,10 +20,18 @@
 			<!--  if validation fails, struts returns input as result -->
 			<result name="input">currency.jsp</result>
 		</action>
-
-		<action name="courses" class="action.CoursesAction" method="load">
-			<result name="success">courses.jsp</result>
+		
+		<action name="selectJob" class="action.JobEmployeesAction" method="input">
+			<result name="success">job_employees.jsp</result>
 		</action>
+		
+		<action name="employeesByJob" class="action.JobEmployeesAction" method="input">
+			<result name="success">job_employees.jsp</result>
+		</action>
+
+	<!-- 	<action name="courses" class="action.CoursesAction" method="load">
+			<result name="success">courses.jsp</result>
+		</action> -->
 
 	</package>
 </struts>        
