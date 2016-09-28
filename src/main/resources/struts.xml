@@ -10,7 +10,7 @@
 			<result-type name="tiles"
 				class="org.apache.struts2.views.tiles.TilesResult"></result-type>
 		</result-types>
-		
+
 		<action name="page1" class="action.Page1Action">
 			<result name="page1" type="tiles">page1</result>
 		</action>
@@ -18,24 +18,36 @@
 		<action name="page2" class="action.Page2Action">
 			<result name="page2" type="tiles">page2</result>
 		</action>
-		
-		<action name="today" class="action.TodayAction" >
-            <result name="success">/today.jsp</result>
-        </action>
-        
-		
 
-		<!-- <action name="index"> <result>index.jsp</result> </action> <action 
-			name="hello" class="action.HelloAction"> <result name="success">hello.jsp</result> 
-			<result name="failure">error.jsp</result> </action> <action name="currency" 
-			class="action.CurrencyAction"> <result name="success">currency.jsp</result> 
-			<result name="input">currency.jsp</result> </action> <action name="selectJob" 
-			class="action.JobEmployeesAction" method="input"> <result name="success">job_employees.jsp</result> 
-			</action> <action name="employeesByJob" class="action.JobEmployeesAction" 
-			method="input"> <result name="success">job_employees.jsp</result> </action> -->
+		<action name="today" class="action.TodayAction">
+			<result name="success">/today.jsp</result>
+		</action>
 
-		<!-- <action name="courses" class="action.CoursesAction" method="load"> 
-			<result name="success">courses.jsp</result> </action> -->
+
+
+		<action name="index">
+			<result>index.jsp</result>
+		</action>
+		<action name="hello" class="action.HelloAction">
+			<result name="success">hello.jsp</result>
+			<result name="failure">error.jsp</result>
+		</action>
+		<action name="currency" class="action.CurrencyAction">
+			<result name="success">currency.jsp</result>
+			<result name="input">currency.jsp</result>
+		</action>
+		<action name="selectJob" class="action.JobEmployeesAction"
+			method="input">
+			<result name="success">job_employees.jsp</result>
+		</action>
+		<action name="employeesByJob" class="action.JobEmployeesAction"
+			method="input">
+			<result name="success">job_employees.jsp</result>
+		</action>
+
+		<action name="courses" class="action.CoursesAction" method="load">
+			<result name="success">courses.jsp</result>
+		</action>
 
 	</package>
 </struts>        
