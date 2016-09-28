@@ -25,16 +25,36 @@
 			<artifactId>struts2-convention-plugin</artifactId>
 			<version>2.3.30</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
 			<version>11.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-tiles-plugin</artifactId>
+			<version>2.3.30</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jgeppert.struts2.jquery</groupId>
+			<artifactId>struts2-jquery-plugin</artifactId>
+			<version>3.7.1</version>
+		</dependency>
+
+
 	</dependencies>
 	<build>
 		<finalName>s2demo</finalName>
-		
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -46,7 +66,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		
-		
+
+
 	</build>
 </project>
